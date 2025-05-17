@@ -1,0 +1,21 @@
+# ⚠️ Archivos sensibles
+.env
+debug_log.txt
+
+# 📦 Dependencias
+/vendor/
+/node_modules/
+
+# 💻 Configs del sistema operativo
+.DS_Store
+Thumbs.db
+
+# 💡 Archivos temporales
+*.log
+*.bak
+*.tmp
+*.save
+
+# 🚀 IDEs (opcional)
+.vscode/
+.idea/
