@@ -1,0 +1,28 @@
+.float {
+    position: fixed;
+    width: 65px;
+    height: 65px;
+    bottom: 20px; /* Lo baja más */
+    right: 20px; /* Lo alinea a la derecha */
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px; /* Tamaño del icono */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Se asegura de que esté por encima de otros elementos */
+    transition: transform 0.3s ease-in-out;
+}
+
+.float:hover {
+    transform: scale(1.2);
+    background-color: #1ebe57;
+}
+
+/* Estilo del ícono */
+.my-float {
+    margin-top: 2px;
+    font-size: 35px;
+}

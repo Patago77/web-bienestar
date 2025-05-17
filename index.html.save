@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bienestar es Movimiento - Clases de Pilates y más para tu bienestar físico y mental." />
+    <title>Bienestar es Movimiento</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/whatssapp.css">
+  </head>
+
+
+
+
+  <body>
+    <!-- Encabezado -->
+    <header class="container-fluid mi-header text-light text-center p-2">
+      <h1>Bienestar es Movimiento</h1>
+      <p>Tu espacio para conectar cuerpo y mente</p>
+    </header>
+
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Inicio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#servicios">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nosotros">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sección del efecto Typewriter -->
+    <section id="intro" class="text-center my-5">
+      <div id="typewriter"></div>
+    </section>
+
+    <!-- Slider de Imágenes -->
+    <section id="slider" class="mb-5">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- Asegúrate de poner la ruta correcta de la imagen -->
+            <img src="/img/Slider.jpg" class="d-block w-100" alt="Slide 1" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Conexión con el Movimiento</h5>
+              <p>Descubre el poder transformador de Pilates.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/img/slide2.png" class="d-block w-100" alt="Slide 2" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Bienestar Integral</h5>
+              <p>Conecta cuerpo y mente en un solo espacio.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/img/slide4.jpg" class="d-block w-100" alt="Slide 3" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Movimiento que Inspira</h5>
+              <p>Clases personalizadas diseñadas para ti.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide5.jpg" class="d-block w-100" alt="Slide 4" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Movimiento que Inspira</h5>
+              <p>Clases personalizadas diseñadas para ti.</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="container my-5">
+      <h2 class="text-center">Nuestros Servicios</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="image-overlay">
+            <img
+              src="../img/slide7.jpg"
+              alt="Estudio"
+              class="img-fluid rounded"
+            />
+            <div class="overlay-text">Pilates y más</div>
+          </div>
+          <h3 class="mt-3">Stretch Pilates Personalizado</h3>
+          <p> "Atención 100% enfocada en tus necesidades."</p>
+        </div>
+        <div class="col-md-4">
+          <div class="image-overlay">
+            <img
+              src="./img/slide_pilates3.jpg"
+              alt="Clientes"
+              class="img-fluid rounded"
+            />
+            <div class="overlay-text">Movimiento consciente</div>
+          </div>
+          <h3 class="mt-3"> Pilates Reformer Grupal Mixto</h3>
+          <p>"Trabajo con máquinas para fortalecer y mejorar la postura, 
+            Aumenta la flexibilidad,
+            fortalece el core y los músculos estabilizadores,
+            Reduce el estrés y mejora la concentración.."</p>
+        </div>
+        <div class="col-md-4">
+          <div class="image-overlay">
+            <img
+              src="./img/Strtchin grupal.jpg"
+              alt="Pilates"
+              class="img-fluid rounded"
+            />
+            <div class="overlay-text">Fuerza y Control</div>
+          </div>
+          <h3 class="mt-3">Stretching Integral Grupal </h3>
+          <p>Desarrolla control, fuerza y elongación.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section id="nosotros" class="bg-light py-5 text-center">
+      <h2>Sobre Nosotros</h2>
+      <p>
+        En Bienestar es Movimiento creemos en el poder transformador del
+        movimiento. Nuestro estudio combina técnica y dedicación para ofrecerte
+        la mejor experiencia.
+      </p>
+      <img
+        src="./img/Equipo-1.jpg"
+        alt="Equipo"
+        class="img-fluid rounded"
+      />
+    </section>
+
+    <!-- Testimonios de Clientes -->
+    <section id="testimonios" class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Testimonios de Nuestros Clientes</h2>
+        <div
+          id="carouselTestimonios"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex flex-column align-items-center">
+                <img
+                  src="./img/Servicio-1.jpg"
+                  class="rounded-circle mb-3"
+                  alt="Cliente 1"
+                  style="width: 100px; height: 100px;"
+                />
+                <p class="text-center">
+                  "El mejor lugar para desconectar y reconectar con mi cuerpo.
+                  ¡Altamente recomendado!"
+                </p>
+                <h5>- María López</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex flex-column align-items-center">
+                <img
+                  src="./img/Servicios-3.jpg"
+                  class="rounded-circle mb-3"
+                  alt="Cliente 2"
+                  style="width: 100px; height: 100px;"
+                />
+                <p class="text-center">
+                  "Gracias a las clases de Pilates, me siento más fuerte y
+                  saludable que nunca."
+                </p>
+                <h5>- Juan Pérez</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex flex-column align-items-center">
+                <img
+                  src="./img/Clases pilates Lima1.jpeg"
+                  class="rounded-circle mb-3"
+                  alt="Cliente 3"
+                  style="width: 100px; height: 100px;"
+                />
+                <p class="text-center">
+                  "Ambiente agradable y profesores muy profesionales. ¡Me encanta!"
+                </p>
+                <h5>- Ana Martínez</h5>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselTestimonios"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselTestimonios"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section id="contacto" class="container my-5">
+      <h2 class="text-center">Contáctanos</h2>
+
+      <form action="form.php" method="POST">
+        <input type="text" name="name" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu correo" required>
+        <textarea name="message" placeholder="Escribe tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+    
+    </section>
+
+    <!-- Botones para Compartir Contenido -->
+    <div id="share-buttons" class="text-center my-5">
+      <p>¡Comparte nuestra página!</p>
+      <a
+        href="https://www.facebook.com/sharer/sharer.php?u=https://tupagina.com"
+        target="_blank"
+      >
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a
+        href="https://twitter.com/intent/tweet?text=Visita%20Bienestar%20es%20Movimiento!%20https://tupagina.com"
+        target="_blank"
+      >
+        <i class="bi bi-twitter"></i>
+      </a>
+      <a
+        href="https://api.whatsapp.com/send?text=Visita%20Bienestar%20es%20Movimiento%20https://tupagina.com"
+        target="_blank"
+      >
+        <i class="bi bi-whatsapp"></i>
+      </a>
+    </div>
+
+    <!-- Footer con Iconos Sociales -->
+    <footer class="mi-footer text-light text-center py-3">
+      <p>&copy; 2025 Bienestar es Movimiento. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Facebook SDK -->
+    <div
+      class="fb-page"
+      data-href="https://www.facebook.com/tuperfil"
+      data-tabs="timeline"
+      data-width=""
+      data-height=""
+      data-small-header="false"
+      data-adapt-container-width="true"
+      data-hide-cover="false"
+      data-show-facepile="true"
+    ></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0"
+    ></script>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=5195508107&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20las%20clases." 
+       class="float" target="_blank">
+      <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/validacion.js"></script>
+  </body>
+  </html>
