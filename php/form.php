@@ -8,7 +8,7 @@ require 'vendor/autoload.php'; // PHPMailer
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     // 🔐 Validación de reCAPTCHA
-    $secretKey = '6Lfjuz0rAAAAAKuqcjHmaOnVkujAsoJmttjidEH_'; // Tu clave secreta real
+    $secretKey = '6LeMWT8rAAAAAACnnQidX2DjXSvjHgFyGed_uEWP'; // Tu clave secreta real
     $recaptchaResponse = $_POST['g-recaptcha-response'] ?? '';
 
     $verify = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$secretKey}&response={$recaptchaResponse}&remoteip=" . $_SERVER['REMOTE_ADDR']);
